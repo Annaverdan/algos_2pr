@@ -1,7 +1,5 @@
-﻿#include <chrono>
 #include <random>
 #include <windows.h>
-#include <ctime>
 
 #include "Dynamic_Arr.h"
 #include "Timsort.h"
@@ -17,13 +15,12 @@ void show_menu() {
     cout << "5. Удалить элемент по индексу\n";
     cout << "6. Просмотреть массив\n";
     cout << "7. Размер массива\n";
-    cout << "8. Сортировка (Timsort)\n";
+    cout << "8. Сортировка Timsort\n";
     cout << "9. Выход\n";
     cout << "Выберите действие: ";
 }
 
 int main() {
-    srand(static_cast<unsigned int>(time(nullptr)));
     setlocale(LC_ALL, "Russian");
     Dynamic_Arr arr = Dynamic_Arr();
 
