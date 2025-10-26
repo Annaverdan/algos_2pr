@@ -119,10 +119,7 @@ int main() {
             }
             else {
                 Timsort sorter(arr);
-                auto start = chrono::high_resolution_clock::now();
                 sorter.sort();
-                auto end = chrono::high_resolution_clock::now();
-                auto duration = chrono::duration_cast<chrono::nanoseconds>(end - start);
                 cout << "Массив отсортирован." << endl;
             }
             break;
